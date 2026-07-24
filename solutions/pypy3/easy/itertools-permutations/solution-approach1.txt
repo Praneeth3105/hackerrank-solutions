@@ -1,0 +1,19 @@
+# ──────────────────────────────────────────────────
+# Link        https://www.hackerrank.com/challenges/itertools-permutations/problem?isFullScreen=true
+# Problem     itertools.permutations()
+# Difficulty  Easy
+# Subdomain   Itertools
+# Platform    HackerRank
+# Language    pypy3
+# Status      Accepted
+# Submitted   2026-07-24, 11:12 a.m.
+# ──────────────────────────────────────────────────
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+from itertools import permutations 
+s, k = input().split()
+k = int(k)
+
+for p in permutations(sorted(s), k):
+    print(''.join(p))
